@@ -14,13 +14,13 @@
       "item": "minecraft:stick"
     },
     "B": {
-      "tag": "forge:nuggets/brass"
+      "tag": "c:brass_nuggets"
     },
     "A": {
-      "tag": "forge:nuggets/zinc"
+      "tag": "c:zinc_nuggets"
     },
     "E": {
-      "tag": "forge:ingots/zinc"
+      "tag": "c:zinc_ingots"
     }
   },
   "result": {

@@ -1,16 +1,15 @@
 {
   "type": "minecraft:stonecutting",
-  "conditions": [
+  "fabric:load_conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:ingots/iron"
-      }
+      "condition": "fabric:tags_populated",
+      "values": [
+        "c:iron_ingots"
+      ]
     }
   ],
   "ingredient": {
-    "tag": "forge:ingots/iron"
+    "tag": "c:iron_ingots"
   },
   "result": "design_decor:iron_large_chain",
   "count": 4

@@ -1,16 +1,15 @@
 {
   "type": "minecraft:stonecutting",
-  "conditions": [
+  "fabric:load_conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:ingots/gold"
-      }
+      "condition": "fabric:tags_populated",
+      "values": [
+        "c:gold_ingots"
+      ]
     }
   ],
   "ingredient": {
-    "tag": "forge:ingots/gold"
+    "tag": "c:gold_ingots"
   },
   "result": "design_decor:gold_large_chain",
   "count": 4

@@ -2,7 +2,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "tag": "forge:ingots/zinc"
+    "tag": "c:zinc_ingots"
   },
   "result": "design_decor:zinc_screw",
   "count": 4

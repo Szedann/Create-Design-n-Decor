@@ -2,7 +2,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "tag": "forge:ingots/copper"
+    "tag": "c:copper_ingots"
   },
   "result": "design_decor:copper_floor",
   "count": 4

@@ -1,16 +1,15 @@
 {
   "type": "minecraft:stonecutting",
-  "conditions": [
+  "fabric:load_conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:ingots/silver"
-      }
+      "condition": "fabric:tags_populated",
+      "values": [
+        "c:silver_ingots"
+      ]
     }
   ],
   "ingredient": {
-    "tag": "forge:ingots/silver"
+    "tag": "c:silver_ingots"
   },
   "result": "design_decor:silver_large_chain",
   "count": 4

@@ -8,7 +8,7 @@
   ],
   "key": {
     "I": {
-      "tag": "forge:plates/copper"
+      "tag": "c:copper_plates"
     },
     "A": {
       "item": "create:andesite_alloy"

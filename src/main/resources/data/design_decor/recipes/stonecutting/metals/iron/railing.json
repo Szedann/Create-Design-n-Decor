@@ -2,7 +2,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "minecraft:iron_ingot"
+    "tag": "c:iron_ingots"
   },
   "result": "design_decor:iron_railing",
   "count": 4

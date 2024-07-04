@@ -1,16 +1,15 @@
 {
   "type": "minecraft:stonecutting",
-  "conditions": [
+  "fabric:load_conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:ingots/electrum"
-      }
+      "condition": "fabric:tags_populated",
+      "values": [
+        "c:electrum_ingots"
+      ]
     }
   ],
   "ingredient": {
-    "tag": "forge:ingots/electrum"
+    "tag": "c:electrum_ingots"
   },
   "result": "design_decor:electrum_large_chain",
   "count": 4

@@ -348,7 +348,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
 //            .register();
 
     public static final BlockEntry<TagBoilerBlock> ALUMINUM_BOILER = REGISTRATE.block("aluminium_boiler",
-                    p -> new TagBoilerBlock(p, AllTags.forgeItemTag("ingots/aluminium")))
+                    p -> new TagBoilerBlock(p, AllTags.forgeItemTag("aluminum_ingots")))
             .initialProperties(SharedProperties::copperMetal)
             .properties(BlockBehaviour.Properties::noOcclusion)
             .properties(p -> p.hasPostProcess((p_61036_, p_61037_, p_61038_) -> true))
@@ -361,7 +361,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
             .register();
 
     public static final BlockEntry<TagBoilerBlock> ALUMINUM_BOILER_SPECIAL = REGISTRATE.block("aluminium_boiler_special",
-                    p -> new TagBoilerBlock(p, AllTags.forgeItemTag("ingots/aluminium")))
+                    p -> new TagBoilerBlock(p, AllTags.forgeItemTag("aluminum_ingots")))
             .initialProperties(SharedProperties::copperMetal)
             .properties(BlockBehaviour.Properties::noOcclusion)
             .properties(p -> p.hasPostProcess((p_61036_, p_61037_, p_61038_) -> true))
@@ -561,7 +561,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
 
 
     public static final BlockEntry<TagBoilerBlock> CAST_IRON_BOILER = REGISTRATE.block("cast_iron_boiler",
-                    p -> new TagBoilerBlock(p, AllTags.forgeItemTag("ingots/cast_iron")))
+                    p -> new TagBoilerBlock(p, AllTags.forgeItemTag("cast_iron_ingots")))
             .initialProperties(SharedProperties::copperMetal)
             .properties(BlockBehaviour.Properties::noOcclusion)
             .properties(p -> p.hasPostProcess((p_61036_, p_61037_, p_61038_) -> true))
@@ -1416,7 +1416,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .onRegister(casingConnectivity((block, cc) -> cc.makeCasing(block, CDDSpriteShifts.ZINC_CHECKER_TILES)))
                     .properties(p -> p.mapColor(MapColor.COLOR_GRAY))
                     .properties(p -> p.sound(SoundType.COPPER))
-                    .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("ingots/zinc")), RecipeCategory.MISC, c::get, 4))
+                    .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("zinc_ingots")), RecipeCategory.MISC, c::get, 4))
                     .properties(BlockBehaviour.Properties::requiresCorrectToolForDrops)
                     .transform(pickaxeOnly())
                     .simpleItem()
@@ -1443,7 +1443,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .initialProperties(SharedProperties::softMetal)
                     .onRegister(connectedTextures(() -> new VerticalCtBehavior(CDDSpriteShifts.METAL_SUPPORT)))
                     .properties(p -> p.sound(SoundType.COPPER))
-                    .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("ingots/iron")), RecipeCategory.MISC, c::get, 4))
+                    .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("iron_ingots")), RecipeCategory.MISC, c::get, 4))
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(new MetalSupportGenerator()::generate)
                     .transform(axeOnly())
@@ -1459,7 +1459,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .properties(p -> p.sound(SoundType.COPPER))
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .transform(axeOnly())
-                    .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("ingots/iron")), RecipeCategory.MISC, c::get, 4))
+                    .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("iron_ingots")), RecipeCategory.MISC, c::get, 4))
                     .blockstate(BlockStateGen.horizontalBlockProvider(true))
                     .item()
                     .transform(customItemModel())
@@ -1655,7 +1655,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
     //Chains
 
     public static final BlockEntry<TagDependentLargeChain> LARGE_ALUMINIUM_CHAIN =
-            REGISTRATE.block("aluminium_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/aluminium")))
+            REGISTRATE.block("aluminium_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("aluminum_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1691,7 +1691,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_STRONG_BRONZE_CHAIN =
-            REGISTRATE.block("strong_bronze_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/strong_bronze")))
+            REGISTRATE.block("strong_bronze_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("strong_bronze_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1703,7 +1703,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_BRONZE_CHAIN =
-            REGISTRATE.block("bronze_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/bronze")))
+            REGISTRATE.block("bronze_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("bronze_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1715,7 +1715,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_CAST_IRON_CHAIN =
-            REGISTRATE.block("cast_iron_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/cast_iron")))
+            REGISTRATE.block("cast_iron_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("cast_iron_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1739,7 +1739,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_ELECTRUM_CHAIN =
-            REGISTRATE.block("electrum_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/electrum")))
+            REGISTRATE.block("electrum_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("electrum_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1787,7 +1787,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_LEAD_CHAIN =
-            REGISTRATE.block("lead_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/lead")))
+            REGISTRATE.block("lead_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("lead_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1799,7 +1799,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_MITHRIL_CHAIN =
-            REGISTRATE.block("mithril_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/mithril")))
+            REGISTRATE.block("mithril_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("mithril_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1823,7 +1823,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_NETHERSTEEL_CHAIN =
-            REGISTRATE.block("nethersteel_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/nethersteel")))
+            REGISTRATE.block("nethersteel_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("nethersteel_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1847,7 +1847,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_TIN_CHAIN =
-            REGISTRATE.block("tin_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/tin")))
+            REGISTRATE.block("tin_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("tin_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1859,7 +1859,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_STEEL_CHAIN =
-            REGISTRATE.block("steel_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/steel")))
+            REGISTRATE.block("steel_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("steel_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1871,7 +1871,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_SILVER_CHAIN =
-            REGISTRATE.block("silver_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/silver")))
+            REGISTRATE.block("silver_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("silver_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1883,7 +1883,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_INVAR_CHAIN =
-            REGISTRATE.block("invar_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/invar")))
+            REGISTRATE.block("invar_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("invar_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1895,7 +1895,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_NICKEL_CHAIN =
-            REGISTRATE.block("nickel_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/nickel")))
+            REGISTRATE.block("nickel_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("nickel_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1907,7 +1907,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_ROSE_GOLD_CHAIN =
-            REGISTRATE.block("rose_gold_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/rose_gold")))
+            REGISTRATE.block("rose_gold_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("rose_gold_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1919,7 +1919,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_COBALT_CHAIN =
-            REGISTRATE.block("cobalt_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/cobalt")))
+            REGISTRATE.block("cobalt_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("cobalt_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1931,7 +1931,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_MANYULLYN_CHAIN =
-            REGISTRATE.block("manyullyn_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/manyullyn")))
+            REGISTRATE.block("manyullyn_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("manyullyn_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1943,7 +1943,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_HEPATIZON_CHAIN =
-            REGISTRATE.block("hepatizon_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/hepatizon")))
+            REGISTRATE.block("hepatizon_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("hepatizon_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1955,7 +1955,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_PIG_IRON_CHAIN =
-            REGISTRATE.block("pig_iron_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/pig_iron")))
+            REGISTRATE.block("pig_iron_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("pig_iron_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1967,7 +1967,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_KNIGHTSLIME_CHAIN =
-            REGISTRATE.block("knightslime_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/knightslime")))
+            REGISTRATE.block("knightslime_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("knightslime_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -1979,7 +1979,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .build()
                     .register();
     public static final BlockEntry<TagDependentLargeChain> LARGE_QUEEN_SLIME_CHAIN =
-            REGISTRATE.block("queen_slime_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("ingots/queen_slime")))
+            REGISTRATE.block("queen_slime_large_chain", p -> new TagDependentLargeChain(p, AllTags.forgeItemTag("queen_slime_ingots")))
                     .properties(p -> p.mapColor(MapColor.METAL))
                     .addLayer(() -> RenderType::cutout)
                     .transform(axeOrPickaxe())
@@ -2130,7 +2130,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
             .properties(p -> p.sound(SoundType.NETHERITE_BLOCK))
             .properties(p -> p.requiresCorrectToolForDrops())
             .transform(pickaxeOnly())
-                            .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("ingots/iron")), RecipeCategory.MISC, c::get, 8))
+                            .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("iron_ingots")), RecipeCategory.MISC, c::get, 8))
 
             .blockstate((c, p) -> CDDVanillaBlockStates.generateSlabBlockState(c, p, "metal_plate"))
             .tag(BlockTags.NEEDS_STONE_TOOL)
@@ -2149,7 +2149,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .blockstate((c, p) -> CDDVanillaBlockStates.generateSlabBlockState(c, p, "metal_sheet"))
                     .tag(BlockTags.NEEDS_STONE_TOOL)
                     .tag(BlockTags.SLABS)
-                    .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("ingots/iron")), RecipeCategory.MISC, c::get, 8))
+                    .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("iron_ingots")), RecipeCategory.MISC, c::get, 8))
 
                     .item()
                     .transform(customItemModel("metal_sheet_bottom"))
@@ -2175,7 +2175,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                 .blockstate((c, p) -> CDDVanillaBlockStates.generateWallBlockState(c, p, name))
                 .tag(BlockTags.NEEDS_STONE_TOOL)
                 .tag(BlockTags.WALLS)
-                .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("ingots/iron")), RecipeCategory.MISC, c::get, 4))
+                .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("iron_ingots")), RecipeCategory.MISC, c::get, 4))
 
                 .item()
                 .transform(b -> CDDVanillaBlockStates.transformWallItem(b, name))
@@ -2194,7 +2194,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .transform(pickaxeOnly())
                     .blockstate((c, p) -> CDDVanillaBlockStates.generateStairBlockState(c, p, name))
                     .tag(BlockTags.NEEDS_STONE_TOOL)
-                    .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("ingots/iron")), RecipeCategory.MISC, c::get, 4))
+                    .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("iron_ingots")), RecipeCategory.MISC, c::get, 4))
 
                     .tag(BlockTags.STAIRS)
                     .item()
@@ -2211,7 +2211,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                     .transform(pickaxeOnly())
                     .blockstate((c, p) -> CDDVanillaBlockStates.generateStairBlockState(c, p, name))
                     .tag(BlockTags.NEEDS_STONE_TOOL)
-                    .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("ingots/iron")), RecipeCategory.MISC, c::get, 4))
+                    .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("iron_ingots")), RecipeCategory.MISC, c::get, 4))
 
                     .tag(BlockTags.STAIRS)
                     .item()
@@ -2232,7 +2232,7 @@ public static final BlockEntry<ScrewBlock> ZINC_SCREW = REGISTRATE.block("zinc_s
                 .properties(p -> p.requiresCorrectToolForDrops())
                 .transform(pickaxeOnly())
                 .blockstate(simpleCubeAll(name))
-                .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("ingots/iron")), RecipeCategory.MISC, c::get, 4))
+                .recipe((c, p) -> p.stonecutting(DataIngredient.tag(AllTags.forgeItemTag("iron_ingots")), RecipeCategory.MISC, c::get, 4))
 
                 .tag(BlockTags.NEEDS_STONE_TOOL)
                 .transform(tagBlockAndItem(name))

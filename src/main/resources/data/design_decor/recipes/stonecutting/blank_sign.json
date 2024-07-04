@@ -2,7 +2,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "tag": "forge:nuggets/zinc"
+    "tag": "c:zinc_nuggets"
   },
   "result": "design_decor:blank_sign",
   "count": 1
