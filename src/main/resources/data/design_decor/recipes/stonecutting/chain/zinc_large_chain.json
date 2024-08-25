@@ -1,16 +1,15 @@
 {
   "type": "minecraft:stonecutting",
-  "conditions": [
+  "fabric:load_conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:ingots/zinc"
-      }
+      "condition": "fabric:tags_populated",
+      "values": [
+        "c:zinc_ingots"
+      ]
     }
   ],
   "ingredient": {
-    "tag": "forge:ingots/zinc"
+    "tag": "c:zinc_ingots"
   },
   "result": "design_decor:zinc_large_chain",
   "count": 4

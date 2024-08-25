@@ -2,7 +2,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "minecraft:gold_block"
+    "tag": "c:gold_blocks"
   },
   "result": "design_decor:gold_boiler",
   "count": 4

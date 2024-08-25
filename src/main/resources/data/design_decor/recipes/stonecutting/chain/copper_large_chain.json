@@ -1,16 +1,15 @@
 {
   "type": "minecraft:stonecutting",
-  "conditions": [
+  "fabric:load_conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:ingots/copper"
-      }
+      "condition": "fabric:tags_populated",
+      "values": [
+        "c:copper_ingots"
+      ]
     }
   ],
   "ingredient": {
-    "tag": "forge:ingots/copper"
+    "tag": "c:copper_ingots"
   },
   "result": "design_decor:copper_large_chain",
   "count": 4

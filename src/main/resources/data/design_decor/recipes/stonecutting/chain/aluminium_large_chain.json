@@ -1,16 +1,15 @@
 {
   "type": "minecraft:stonecutting",
-  "conditions": [
+  "fabric:load_conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:ingots/aluminum"
-      }
+      "condition": "fabric:tags_populated",
+      "values": [
+        "c:aluminum_ingots"
+      ]
     }
   ],
   "ingredient": {
-    "tag": "forge:ingots/aluminium"
+    "tag": "c:aluminum_ingots"
   },
   "result": "design_decor:aluminium_large_chain",
   "count": 4

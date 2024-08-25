@@ -2,7 +2,7 @@
   "type": "minecraft:stonecutting",
   "count": 4,
   "ingredient": {
-    "tag": "c:ingots/iron"
+    "tag": "c:iron_ingots"
   },
   "result": "design_decor:diagonal_metal_support"
 }

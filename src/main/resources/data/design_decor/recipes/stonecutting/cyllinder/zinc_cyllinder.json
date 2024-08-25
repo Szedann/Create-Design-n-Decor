@@ -2,7 +2,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "tag": "forge:storage_blocks/zinc"
+    "tag": "c:zinc_blocks"
   },
   "result": "design_decor:zinc_boiler",
   "count": 4

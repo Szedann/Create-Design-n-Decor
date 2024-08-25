@@ -1,16 +1,15 @@
 {
   "type": "minecraft:stonecutting",
-  "conditions": [
+  "fabric:load_conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:ingots/mithril"
-      }
+      "condition": "fabric:tags_populated",
+      "values": [
+        "c:mythril_ingots"
+      ]
     }
   ],
   "ingredient": {
-    "tag": "forge:ingots/mithril"
+    "tag": "c:mithril_ingots"
   },
   "result": "design_decor:mithril_large_chain",
   "count": 4

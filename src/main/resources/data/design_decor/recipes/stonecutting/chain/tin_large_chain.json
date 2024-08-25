@@ -1,16 +1,15 @@
 {
   "type": "minecraft:stonecutting",
-  "conditions": [
+  "fabric:load_conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:ingots/tin"
-      }
+      "condition": "fabric:tags_populated",
+      "values": [
+        "c:tin_ingots"
+      ]
     }
   ],
   "ingredient": {
-    "tag": "forge:ingots/tin"
+    "tag": "c:tin_ingots"
   },
   "result": "design_decor:tin_large_chain",
   "count": 4

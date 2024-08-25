@@ -1,16 +1,15 @@
 {
   "type": "minecraft:stonecutting",
-  "conditions": [
+  "fabric:load_conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:ingots/pig_iron"
-      }
+      "condition": "fabric:tags_populated",
+      "values": [
+        "c:pig_iron_ingots"
+      ]
     }
   ],
   "ingredient": {
-    "tag": "forge:ingots/pig_iron"
+    "tag": "c:pig_iron_ingots"
   },
   "result": "design_decor:pig_iron_large_chain",
   "count": 4

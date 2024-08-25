@@ -2,7 +2,7 @@
 {
   "type": "minecraft:stonecutting",
   "ingredient": {
-    "item": "minecraft:gold_ingot"
+    "tag": "c:gold_ingots"
   },
   "result": "design_decor:industrial_gold_block",
   "count": 2

@@ -8,7 +8,7 @@
   ],
   "key": {
     "B": {
-      "tag": "forge:ingots/copper"
+      "tag": "c:copper_ingots"
     },
     "E": {
       "item": "minecraft:prismarine_crystals"

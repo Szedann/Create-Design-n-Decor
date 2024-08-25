@@ -1,16 +1,15 @@
 {
   "type": "minecraft:stonecutting",
-  "conditions": [
+  "fabric:load_conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:ingots/knightslime"
-      }
+      "condition": "fabric:tags_populated",
+      "values": [
+        "c:knightslime_ingots"
+      ]
     }
   ],
   "ingredient": {
-    "tag": "forge:ingots/knightslime"
+    "tag": "c:knightslime_ingots"
   },
   "result": "design_decor:knightslime_large_chain",
   "count": 4

@@ -8,7 +8,7 @@
   ],
   "key": {
     "M": {
-      "tag": "forge:nuggets/copper"
+      "tag": "c:copper_nuggets"
     },
     "G": {
       "item": "minecraft:glowstone_dust"

@@ -1,16 +1,15 @@
 {
   "type": "minecraft:stonecutting",
-  "conditions": [
+  "fabric:load_conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:tag_empty",
-        "tag": "forge:ingots/invar"
-      }
+      "condition": "fabric:tags_populated",
+      "values": [
+        "c:invar_ingots"
+      ]
     }
   ],
   "ingredient": {
-    "tag": "forge:ingots/invar"
+    "tag": "c:invar_ingots"
   },
   "result": "design_decor:invar_large_chain",
   "count": 4
